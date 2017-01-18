@@ -1,0 +1,752 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="歪猴,为之!" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="多媒体
+
+早期的因特网主要用来分享学术成果,但是对普通民众而言,更愿意在上面分享一些更有趣的内容,比如视频,音频,但这些技术在html5之前都不是由html标签提供的
+
+[TOC]
+网页音视频解决方案发展
+虽然早期的html并没有提供支持视频或者音频播放的标签,但是这并不影响人们分享的欲望
+
+
+支持方式1:
+
+使用embed直接将视频塞入页面,然后就可以使用Windows Media Player">
+<meta property="og:type" content="article">
+<meta property="og:title" content="歪猴的博客">
+<meta property="og:url" content="http://yoursite.com/blog/notes/10.多媒体/20170117/index.html">
+<meta property="og:site_name" content="歪猴的博客">
+<meta property="og:description" content="多媒体
+
+早期的因特网主要用来分享学术成果,但是对普通民众而言,更愿意在上面分享一些更有趣的内容,比如视频,音频,但这些技术在html5之前都不是由html标签提供的
+
+[TOC]
+网页音视频解决方案发展
+虽然早期的html并没有提供支持视频或者音频播放的标签,但是这并不影响人们分享的欲望
+
+
+支持方式1:
+
+使用embed直接将视频塞入页面,然后就可以使用Windows Media Player">
+<meta property="og:image" content="http://yoursite.com/imgs/desk.jpg">
+<meta property="og:updated_time" content="2016-08-09T22:39:23.370Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="歪猴的博客">
+<meta name="twitter:description" content="多媒体
+
+早期的因特网主要用来分享学术成果,但是对普通民众而言,更愿意在上面分享一些更有趣的内容,比如视频,音频,但这些技术在html5之前都不是由html标签提供的
+
+[TOC]
+网页音视频解决方案发展
+虽然早期的html并没有提供支持视频或者音频播放的标签,但是这并不影响人们分享的欲望
+
+
+支持方式1:
+
+使用embed直接将视频塞入页面,然后就可以使用Windows Media Player">
+<meta name="twitter:image" content="http://yoursite.com/imgs/desk.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/blog/notes/10.多媒体/20170117/"/>
+
+
+
+
+
+  <title>  | 歪猴的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">歪猴的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <h1 class="site-subtitle" itemprop="description"></h1>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/notes/10.多媒体/20170117/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="歪猴">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="歪猴的博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="歪猴的博客" src="/images/head.jpg">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-17T14:08:39+08:00">
+                2017-01-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h1><p><img src="imgs/desk.jpg" alt="前端与移动开发学院"></p>
+<blockquote>
+<p>早期的因特网主要用来分享学术成果,但是对普通民众而言,更愿意在上面分享一些更有趣的内容,比如<code>视频</code>,<code>音频</code>,但这些技术在<code>html5</code>之前都不是由<code>html标签</code>提供的</p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="网页音视频解决方案发展"><a href="#网页音视频解决方案发展" class="headerlink" title="网页音视频解决方案发展"></a>网页音视频解决方案发展</h2><blockquote>
+<p>虽然早期的<code>html</code>并没有提供支持视频或者音频播放的标签,但是这并不影响人们分享的欲望</p>
+</blockquote>
+<ul>
+<li><p><strong>支持方式1:</strong></p>
+<ul>
+<li>使用<code>embed</code>直接将视频塞入页面,然后就可以使用<code>Windows Media Player</code>,<code>Apple QuickTime</code>或者其实的视频播放器来创建播放窗口</li>
+<li>但是这种方式对于视频本身不可控,兼容性问题也无法顾及</li>
+</ul>
+</li>
+<li><p><strong>支持方式2</strong></p>
+<ul>
+<li>使用浏览器插件,一个是微软的<code>Silverlight</code>,还有使用最普遍的<code>Adobe Flash</code></li>
+<li><code>Flash</code>不但完全解决了浏览器支持问题,而且装机率之高让人咋舌(基本上99%的计算机都安装了Flash播放器)</li>
+<li>使用<code>Flash</code>播放视频除了要学习<code>Flash</code>这项技术本身以外,更关键的是在<code>iPhone</code>,<code>ipad</code>并不支持这项技术</li>
+<li>如果想要查看视频的播放方式,将鼠标移动到视频窗口,右键如果可以看到<code>Flash</code>等文字,那么该网站使用的就是Flash插件</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>多媒体标签:</strong><ul>
+<li><code>Html5</code>为了解决使用<code>Flash</code>的各种问题推出了多媒体标签</li>
+<li>由于视频格式问题,不同的浏览器对于相同格式的视频支持不同,需要准备多份视频</li>
+<li>无法对播放的视频提供很好的保护效果,因为用户可以直接对视频文件另存为</li>
+</ul>
+</li>
+<li><strong>总结:</strong><ul>
+<li>虽然<code>html5</code>中的多媒体标签有各种不好,但我们还是需要拥抱这项新的技术,因为他的用法,真的十分简单</li>
+</ul>
+</li>
+</ul>
+<p>##audio标签</p>
+<blockquote>
+<p>在w3c中对于<code>audio</code>的说明是这样的<a href="http://www.w3school.com.cn/html5/html_5_audio.asp" target="_blank" rel="external">audio标签</a></p>
+</blockquote>
+<ul>
+<li><strong>示例代码1:</strong><ul>
+<li>下面演示一种最简单的使用方式</li>
+<li>src:音频的地址</li>
+<li>controls:音频播放控制器</li>
+<li>autoplay:自动播放</li>
+<li>loop:循环</li>
+<li>poster:指定视频不播放时显示的封面</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"song.ogg"</span> <span class="attr">controls</span>=<span class="string">"controls"</span> <span class="attr">autoplay</span> <span class="attr">loop</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li><strong>示例代码2:</strong><ul>
+<li>由于音频格式在不同浏览器中支持情况不同,考虑兼容性问题,我们需要使用下述代码</li>
+<li>source:指定多个音频,如果找到了当前浏览器支持的,那么会直接使用,如果所有的<code>source</code>标签格式都不支持,会显示最后的文本内容<ul>
+<li>src:音频的地址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"song.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"song.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>&gt;</span></div><div class="line">你的浏览器不支持此种格式</div><div class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>##Video标签</p>
+<blockquote>
+<p><code>Video</code>标签用来播放视频,用法跟<code>audio</code>标签十分类似</p>
+</blockquote>
+<ul>
+<li><strong>示例代码1:</strong><ul>
+<li>src:视频地址</li>
+<li>controls:控制器</li>
+<li>autoplay:自动播放</li>
+<li>loop:循环</li>
+<li>width:宽度</li>
+<li>height:高度</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"movie.ogg"</span> <span class="attr">controls</span> <span class="attr">autoplay</span> <span class="attr">loop</span> <span class="attr">width</span> = <span class="string">"200px"</span> <span class="attr">height</span> = <span class="string">"200px"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li><strong>示例代码2:</strong><ul>
+<li>由于视频在不同浏览器中支持情况不同,考虑兼容性问题,我们需要使用下述代码</li>
+<li><strong>source:</strong>指定多个视频,如果找到了当前浏览器支持的,那么会直接使用,如果所有的<code>source</code>标签格式都不支持,会显示最后的文本内容<ul>
+<li><strong>src:</strong>视频的地址</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> <span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></div><div class="line">你的浏览器不支持video标签</div><div class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/notes/09.新的表单元素/20170117/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/notes/11.两种进度条/20170117/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="歪猴" />
+          <p class="site-author-name" itemprop="name">歪猴</p>
+          <p class="site-description motion-element" itemprop="description">歪猴,天下事有难易乎?为之,则难者亦易矣,不为,则易者亦难矣</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#多媒体"><span class="nav-number">1.</span> <span class="nav-text">多媒体</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#网页音视频解决方案发展"><span class="nav-number">1.1.</span> <span class="nav-text">网页音视频解决方案发展</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">歪猴</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
